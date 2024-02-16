@@ -12,8 +12,16 @@ body {
 }
 
 .title {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
+}
+
+.button {
+    margin: 20px;
+    padding: 10px 20px;
 }
 
 .gameboard {
@@ -27,5 +35,5 @@ body {
 
 .cell {
     border: 1px solid blue;
-    
+
 }
