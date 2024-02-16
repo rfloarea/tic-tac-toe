@@ -12,3 +12,7 @@
 Monday, February 12th, 2024 @10:15pm
 
 What a fun project! Games are so great to use to learn how to "think" in a language. I feel like I should be used to it at this point, but I'm still humored by all the little steps that need to be built for even the most meager of games. And let me tell ya, this game is meager as hell. I mean, it won't be. But at this point, things are rough haha. But it's fun!
+
+*later that same day @9:51pm*
+
+Wow, I'm having so much fun busting out this UI! Hahaha, just rapidly setting this thing up is super fun.
