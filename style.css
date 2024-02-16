@@ -26,8 +26,8 @@ body {
 
 .gameboard {
     border: 1px solid black;
-    width: 50%;
-    height: 50%;
+    width: 400px;
+    height: 400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -35,5 +35,4 @@ body {
 
 .cell {
     border: 1px solid blue;
-
 }
