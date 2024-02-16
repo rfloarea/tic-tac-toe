@@ -19,15 +19,20 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 48px;
 }
 
 .button {
     margin: 20px;
     padding: 10px 20px;
+    font-size: large;
+    background-color: antiquewhite;
+    border-radius: 3px;
 }
 
 .gameboard {
-    border: 1px solid black;
+    border: 3px solid antiquewhite;
     width: 400px;
     height: 400px;
     display: grid;
@@ -36,10 +41,10 @@ body {
 }
 
 .cell {
-    border: 1px solid blue;
-    box-shadow: inset 2px 2px rgb(193, 201, 181)
+    border: 3px solid antiquewhite;
+    background-color: rgb(62, 201, 127);;
 }
 
 .cell:hover {
-    background-color: aqua;
+    background-color: rgb(62, 178, 201);
 }
