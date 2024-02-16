@@ -13,6 +13,10 @@ Monday, February 12th, 2024 @10:15pm
 
 What a fun project! Games are so great to use to learn how to "think" in a language. I feel like I should be used to it at this point, but I'm still humored by all the little steps that need to be built for even the most meager of games. And let me tell ya, this game is meager as hell. I mean, it won't be. But at this point, things are rough haha. But it's fun!
 
-*later that same day @9:51pm*
+---
+
+Thursday, February 15th, 2024 @10:19pm
 
 Wow, I'm having so much fun busting out this UI! Hahaha, just rapidly setting this thing up is super fun.
+
+I got a little fed up with the core game logic so I had to have some easy fun with the visuals. Feeling much better about this project now. Sort of, refreshed. Making things that will (hopefully) make other people laugh is really motivating. I should remember that. 
