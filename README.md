@@ -15,7 +15,15 @@ What a fun project! Games are so great to use to learn how to "think" in a langu
 
 ---
 
-Thursday, February 15th, 2024 @10:19pm
+Thursday, February 15th, 2024 @8:59pm
+
+I think part of the reason I keep hitting walls on this has to do with feeling like building the game to run just in the console at first is completely different than using a UI. Not completely, but I can't help but feel I'm just causing more work for myself.
+
+I tried to keep in mind the advice to first solve the problem, then refactor. And I do believe that holds water. But without incorporating the UI from the start is ignoring a huge facet of the problem. It doesn't help to simplify anything for me. It just feels like an arbitrary constraint. But who knows. I'm such a little baby at this I hardly have the experience to make a call like this.
+
+Regardless of how wrong I am, I'm going to build out the UI for this so my brain has some visuals to latch onto.
+
+*later that same day* @10:19pm
 
 Wow, I'm having so much fun busting out this UI! Hahaha, just rapidly setting this thing up is super fun.
 
