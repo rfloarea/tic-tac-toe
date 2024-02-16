@@ -4,6 +4,12 @@
     margin: 0px;
 }
 
+:root {
+    --white: antiquewhite;
+    --blue: rgb(62, 178, 201);
+    --green: rgb(62, 201, 127);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -27,12 +33,12 @@ body {
     margin: 20px;
     padding: 10px 20px;
     font-size: large;
-    background-color: antiquewhite;
+    background-color: var(--white);
     border-radius: 3px;
 }
 
 .gameboard {
-    border: 3px solid antiquewhite;
+    border: 3px solid var(--white);
     width: 400px;
     height: 400px;
     display: grid;
@@ -41,10 +47,17 @@ body {
 }
 
 .cell {
-    border: 3px solid antiquewhite;
-    background-color: rgb(62, 201, 127);;
+    border: 3px solid var(--white);
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell:hover {
-    background-color: rgb(62, 178, 201);
+    background-color: var(--blue);
+}
+
+.cell:active {
+    background-color: var(--green);
 }
