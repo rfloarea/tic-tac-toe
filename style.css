@@ -35,4 +35,9 @@ body {
 
 .cell {
     border: 1px solid blue;
+    box-shadow: inset 2px 2px rgb(193, 201, 181)
+}
+
+.cell:hover {
+    background-color: aqua;
 }
