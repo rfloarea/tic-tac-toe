@@ -2,10 +2,18 @@
 3 IN A ROW!
 
 ## What I did
+Built a simple game with simple, organized code.
+
+Future Features:
+- game logic for win conditions and subsequent announcement: "Player One win!!"
+- programmatically block spaces from being changed again
+- misc. stylings that feel more weird/fun
 
 ## What I learned
 1. Factory functions and the module pattern. This stuff is really cool! It's a whole 'nother level of programming that is really exciting to reach. Still hacking at it, but every success feels huge!
 2. Using closures and scope and factory functions to do cool stuff.
+3. It is far more beneficial to start writing code from the most basic, long-handed way. At this point in my abilities, I need to spend more time understanding the basic functions before jumping to writing the "most elegant" solution. It's just like writing in english. Get that shitty first draft out there, and then refine.
+    - As they say, first solve the problem, then refactor!
 
 ## Plog
 
@@ -28,3 +36,11 @@ Regardless of how wrong I am, I'm going to build out the UI for this so my brain
 Wow, I'm having so much fun busting out this UI! Hahaha, just rapidly setting this thing up is super fun.
 
 I got a little fed up with the core game logic so I had to have some easy fun with the visuals. Feeling much better about this project now. Sort of, refreshed. Making things that will (hopefully) make other people laugh is really motivating. I should remember that. 
+
+---
+
+Monday, February 19th, 2024 @5:39pm
+
+I learned stuff today!! Woots all around!
+
+Specifically, I ACTUALLY UNDERSTAND MODULES AND IIFE'S :D :D :D Learning is fun!
