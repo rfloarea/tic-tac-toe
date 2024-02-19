@@ -10,6 +10,29 @@ const cell7 = gameboardUI.querySelector('#cell7');
 const cell8 = gameboardUI.querySelector('#cell8');
 const cell9 = gameboardUI.querySelector('#cell9');
 
+const restart = document.body.querySelector('.button');
+restart.addEventListener("click", function() {
+    cell1.textContent = " ";
+    cell2.textContent = " ";
+    cell3.textContent = " ";
+    cell4.textContent = " ";
+    cell5.textContent = " ";
+    cell6.textContent = " ";
+    cell7.textContent = " ";
+    cell8.textContent = " ";
+    cell9.textContent = " ";
+});
+
+cell1.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell2.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell3.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell4.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell5.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell6.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell7.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell8.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell9.addEventListener("click", (e) => gameController.updateTextContent(e));
+
 const gameController = (function() {
     let turnCounter = 1;
     const updateTextContent = (e) => {
@@ -23,23 +46,6 @@ const gameController = (function() {
     };
     return{updateTextContent}
 })();
-
-cell1.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell2.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell3.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell4.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell5.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell6.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell7.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell8.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell9.addEventListener("click", (e) => gameController.updateTextContent(e));
-
-
-
-
-
-
-
 
 
 
