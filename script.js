@@ -10,34 +10,32 @@ const cell7 = gameboardUI.querySelector('#cell7');
 const cell8 = gameboardUI.querySelector('#cell8');
 const cell9 = gameboardUI.querySelector('#cell9');
 
-
-let turnCounter = 1;
-cell1.addEventListener("click", (e) => {
-    if(turnCounter % 2 !== 0 ){
-        turnCounter++;
-        return e.target.textContent = "X"
-    } else {
-        turnCounter++
-        return e.target.textContent = "O"
+const gameController = (function() {
+    let turnCounter = 1;
+    const updateTextContent = (e) => {
+        if (turnCounter % 2 !== 0) {
+            turnCounter++;
+            return e.target.textContent = "X";
+        } else {
+            turnCounter++;
+            return e.target.textContent = "O";
+        }
     };
-});
-cell2.addEventListener("click", (e) => {
-    if(turnCounter % 2 !== 0 ){
-        turnCounter++;
-        return e.target.textContent = "X"
-    } else {
-        turnCounter++
-        return e.target.textContent = "O"
-    };
-});
-cell3.addEventListener("click", )
-cell4.addEventListener("click", )
-cell5.addEventListener("click", )
-cell6.addEventListener("click", )
-cell7.addEventListener("click", )
-cell8.addEventListener("click", )
-cell9.addEventListener("click", )
+    return{updateTextContent}
+})();
 
+cell1.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell2.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell3.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell4.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell5.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell6.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell7.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell8.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell9.addEventListener("click", (e) => gameController.updateTextContent(e));
+
+
+// let's try turning that click handler into the beginnings of a module
 
 
 
