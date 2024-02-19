@@ -75,6 +75,3 @@ console.log(gameboard); // okay, now what? Now we need a way to manage the state
 
 // this is a lot for one function to do...
 // this is why people create modules!!! when we need to group a bunch of related logic together, we create "modules"
-
-
-
