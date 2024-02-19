@@ -35,9 +35,6 @@ cell8.addEventListener("click", (e) => gameController.updateTextContent(e));
 cell9.addEventListener("click", (e) => gameController.updateTextContent(e));
 
 
-// let's try turning that click handler into the beginnings of a module
-
-
 
 
 
