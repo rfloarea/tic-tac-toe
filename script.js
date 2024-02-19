@@ -1,38 +1,4 @@
-// our event handlers
-const gameboardUI = document.body.querySelector('.gameboard');
-const cell1 = gameboardUI.querySelector('#cell1');
-const cell2 = gameboardUI.querySelector('#cell2');
-const cell3 = gameboardUI.querySelector('#cell3');
-const cell4 = gameboardUI.querySelector('#cell4');
-const cell5 = gameboardUI.querySelector('#cell5');
-const cell6 = gameboardUI.querySelector('#cell6');
-const cell7 = gameboardUI.querySelector('#cell7');
-const cell8 = gameboardUI.querySelector('#cell8');
-const cell9 = gameboardUI.querySelector('#cell9');
-
-const restart = document.body.querySelector('.button');
-restart.addEventListener("click", function() {
-    cell1.textContent = " ";
-    cell2.textContent = " ";
-    cell3.textContent = " ";
-    cell4.textContent = " ";
-    cell5.textContent = " ";
-    cell6.textContent = " ";
-    cell7.textContent = " ";
-    cell8.textContent = " ";
-    cell9.textContent = " ";
-});
-
-cell1.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell2.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell3.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell4.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell5.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell6.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell7.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell8.addEventListener("click", (e) => gameController.updateTextContent(e));
-cell9.addEventListener("click", (e) => gameController.updateTextContent(e));
-
+// our module for controlling turns and clearing the board after a win/tie
 const gameController = (function() {
     let turnCounter = 1;
     const updateTextContent = (e) => {
@@ -44,8 +10,48 @@ const gameController = (function() {
             return e.target.textContent = "O";
         }
     };
-    return{updateTextContent}
+
+    const clearBoard = function() {
+        cell1.textContent = " ";
+        cell2.textContent = " ";
+        cell3.textContent = " ";
+        cell4.textContent = " ";
+        cell5.textContent = " ";
+        cell6.textContent = " ";
+        cell7.textContent = " ";
+        cell8.textContent = " ";
+        cell9.textContent = " ";
+    };
+
+    return{updateTextContent, clearBoard}
 })();
+
+// our selectors
+const gameboardUI = document.body.querySelector('.gameboard');
+const cell1 = gameboardUI.querySelector('#cell1');
+const cell2 = gameboardUI.querySelector('#cell2');
+const cell3 = gameboardUI.querySelector('#cell3');
+const cell4 = gameboardUI.querySelector('#cell4');
+const cell5 = gameboardUI.querySelector('#cell5');
+const cell6 = gameboardUI.querySelector('#cell6');
+const cell7 = gameboardUI.querySelector('#cell7');
+const cell8 = gameboardUI.querySelector('#cell8');
+const cell9 = gameboardUI.querySelector('#cell9');
+const restart = document.body.querySelector('.button');
+
+// our event handlers
+restart.addEventListener("click", gameController.clearBoard);
+cell1.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell2.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell3.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell4.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell5.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell6.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell7.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell8.addEventListener("click", (e) => gameController.updateTextContent(e));
+cell9.addEventListener("click", (e) => gameController.updateTextContent(e));
+
+
 
 
 
